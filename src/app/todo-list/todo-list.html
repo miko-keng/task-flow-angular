@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let todo of todos; let i = index">
+    {{ todo }}
+    <button (click)="delete(i)">❌</button>
+  </li>
+</ul>
+
+<p *ngIf="todos.length === 0">No tasks</p>
